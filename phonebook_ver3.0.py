@@ -11,7 +11,6 @@ class Phonebook:
         return "연락처 추가됨"
 
     def is_valid_number(self, number):
-        # 간단한 전화번호 유효성 검사: 숫자와 하이픈만 포함되어 있는지 확인
         return all(char.isdigit() or char == '-' for char in number)
 
     def view_contacts(self):
@@ -74,6 +73,5 @@ class Phonebook:
             except Exception as e:
                 print(f"오류 발생: {e}")
 
-# To run the program, create an instance of Phonebook and call the run method.
-# phonebook = Phonebook()
-# phonebook.run()
+phonebook = Phonebook()
+phonebook.run()
