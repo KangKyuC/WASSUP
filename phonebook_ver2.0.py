@@ -64,6 +64,6 @@ class Phonebook:
             else:
                 print("잘못된 선택입니다. 다시 시도하세요.")
 
-# To run the program, create an instance of Phonebook and call the run method.
-# phonebook = Phonebook()
-# phonebook.run()
+
+phonebook = Phonebook()
+phonebook.run()
